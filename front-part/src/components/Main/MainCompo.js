@@ -3,7 +3,7 @@ import React from "react";
 export default function MainCompo() {
   return (
     <div className="container-fluid p-0">
-      <div>
+      <div className="mx-auto">
         <h6>Post A Job</h6>
         <label>
           Job Title<span>*</span>
