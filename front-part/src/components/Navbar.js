@@ -26,27 +26,27 @@ export default function Navbar() {
           >
             <ul class="navbar-nav">
               <li class="nav-item ">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="abcd">
                   Post A Job <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="abcd">
                   Inbox
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="abcd">
                   Jobs
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="abcd">
                   Invoice
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="abcd">
                   <FaRegBuilding
                     style={{
                       color: "grey",
