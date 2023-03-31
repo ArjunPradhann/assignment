@@ -4,20 +4,41 @@ export default function LeftBar() {
   return (
     <>
       <div className="container-fluid">
-        <div className="mx-auto">
-          <div className="">
+        <div className="col-md-12">
+          <div>
             <div className="mt-3">
-              <nav
-                id="sidebarMenu"
-                className="collapse d-lg-block sidebar collapse bg-white"
-              >
+              <nav id="sidebarMenu" className=" d-lg-block sidebar bg-white">
                 <div className="position-sticky">
-                  <div classNameName="list-group list-group-flush mx-3 mt-4">
+                  <div classNameName="list-group list-group-flush mt-4">
+                    <a
+                      href="#"
+                      className="list-group-item list-group-item-action py-2 "
+                    >
+                      <span>Dashboard</span>
+                    </a>
                     <a
                       href="#"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
-                      <span>Dashboard</span>
+                      <span>Post A Job</span>
+                    </a>
+                    <a
+                      href="#"
+                      className="list-group-item list-group-item-action py-2 ripple"
+                    >
+                      <span>Manage Posts</span>
+                    </a>
+                    <a
+                      href="#"
+                      className="list-group-item list-group-item-action py-2 ripple"
+                    >
+                      <span>Inbox</span>
+                    </a>
+                    <a
+                      href="#"
+                      className="list-group-item list-group-item-action py-2 ripple"
+                    >
+                      <span>My Profile</span>
                     </a>
                     <a
                       href="#"

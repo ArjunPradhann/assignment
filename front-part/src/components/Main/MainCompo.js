@@ -2,77 +2,116 @@ import React from "react";
 
 export default function MainCompo() {
   return (
-    <div className="container-fluid p-0">
-      <div className="mx-auto">
-        <h6>Post A Job</h6>
-        <label>
-          Job Title<span>*</span>
-        </label>
+    <div className="container-fluid mt-3 ">
+      <h6>Post A Job</h6>
+      <form>
+        <div class="form-group">
+          <label htmlFor="formGroupExampleInput">
+            Job Title<span>*</span>
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            placeholder="Enter job title"
+          />
+        </div>
+        <div class="form-group">
+          <label htmlFor="formGroupExampleInput2">
+            Job Description<span>*</span>
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput2"
+            placeholder="Another input"
+          />
+        </div>
+        <div class="form-group">
+          <label htmlFor="formGroupExampleInput3">
+            Skiils Required<span>*</span>
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput3"
+            placeholder="Enter skills required"
+          />
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label for="exampleFormControlSelect1">
+              Industry Type<span>*</span>
+            </label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Select industry type</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="exampleFormControlSelect1">
+              Job Type<span>*</span>
+            </label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Select job type</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
         <br />
-        <input placeholder="Enter job title" type="text"></input>
-      </div>
-      <div>
-        <label>
-          Job Description<span>*</span>
-        </label>
-        <br />
-        <input type="text"></input>
-      </div>
-      <div>
-        <label>
-          Skiils Required<span>*</span>
-        </label>
-        <br />
-        <input placeholder="Enter skills required" type="text"></input>
-      </div>
-      <div className="d-flex flex-row">
-        <div>
-          <label for="cars">
-            Industry Type<span>*</span>
-          </label>
-          <br />
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Select industry type</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+        <div class="form-row">
+          <div class="col">
+            <label for="exampleFormControlSelect1">
+              Work Type<span>*</span>
+            </label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Select work type</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="exampleFormControlSelect1">
+              Experience<span>*</span>
+            </label>
+            <div className="form-inline">
+              <select class="form-control mr-3 " id="exampleFormControlSelect1">
+                <option>Enter min exp</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <select class="form-control col" id="exampleFormControlSelect1">
+                <option>Enter max exp</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
         </div>
-        <div>
-          <label for="cars">
-            Job Type<span>*</span>
-          </label>
-          <br />
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Select job type</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+        <div className="pt-3">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="button"
+            aria-pressed="false"
+            autocomplete="off"
+          >
+            Submit
+          </button>
         </div>
-      </div>
-      <div className="d-flex flex-row">
-        <div>
-          <label for="cars">
-            Work Type<span>*</span>
-          </label>
-          <br />
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Enter work rate</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div>
-          <label for="cars">
-            Experience<span>*</span>
-          </label>
-          <br />
-          <input placeholder="Enter min exp"></input>
-          <input placeholder="Enter max exp"></input>
-        </div>
-      </div>
+      </form>
     </div>
   );
 }
