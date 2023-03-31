@@ -1,24 +1,22 @@
 import "./App.css";
 import LeftBar from "./components/LeftBar";
+import Navbar from "./components/Navbar";
+import MainCompo from "./components/Main/MainCompo";
 
 function App() {
   return (
-    <div>
-      <div style={{height: 150, backgroundColor: "#dcedf9"}}>
-        <nav>
-          <div className="d-flex justify-content-end">
-            <div className="p-2 bd-highlight">Post A Job</div>
-            <div className="p-2 bd-highlight">Inbox</div>
-            <div className="p-2 bd-highlight">Jobs</div>
-            <div className="p-2 bd-highlight">Invoice</div>
-            <div className="p-2 bd-highlight">Customer</div>
+    <div className="container-fluid m-0 p-0">
+      <Navbar />
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <LeftBar />
           </div>
-        </nav>
-        <div>
-          <h1 className="row justify-content-center">TECHNOLOGY & STAFFING SOLUTIONS</h1>
+          <div className="col-md-8">
+            <MainCompo />
+          </div>
         </div>
       </div>
-      <LeftBar />
     </div>
   );
 }

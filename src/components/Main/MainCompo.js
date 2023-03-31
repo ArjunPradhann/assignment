@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MainCompo() {
   return (
-    <div className="mt-3 border col-md-6">
+    <div className="container-fluid p-0">
       <div>
         <h6>Post A Job</h6>
         <label>
@@ -27,42 +27,50 @@ export default function MainCompo() {
       </div>
       <div className="d-flex flex-row">
         <div>
-        <label for="cars">Industry Type<span>*</span></label>
-        <br />
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Select industry type</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+          <label for="cars">
+            Industry Type<span>*</span>
+          </label>
+          <br />
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select industry type</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
         </div>
         <div>
-        <label for="cars">Job Type<span>*</span></label>
+          <label for="cars">
+            Job Type<span>*</span>
+          </label>
           <br />
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Select job type</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select job type</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
         </div>
       </div>
       <div className="d-flex flex-row">
-      <div>
-        <label for="cars">Work Type<span>*</span></label>
-        <br />
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Enter work rate</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+        <div>
+          <label for="cars">
+            Work Type<span>*</span>
+          </label>
+          <br />
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Enter work rate</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
         </div>
         <div>
-        <label for="cars">Experience<span>*</span></label>
-        <br />
-        <input placeholder="Enter min exp"></input>
-        <input placeholder="Enter max exp"></input>
+          <label for="cars">
+            Experience<span>*</span>
+          </label>
+          <br />
+          <input placeholder="Enter min exp"></input>
+          <input placeholder="Enter max exp"></input>
         </div>
       </div>
     </div>
