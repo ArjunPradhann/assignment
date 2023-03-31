@@ -44,11 +44,13 @@ export default function MainCompo() {
               Industry Type<span>*</span>
             </label>
             <select class="form-control" id="exampleFormControlSelect1">
-              <option>Select industry type</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option selected disabled>
+                Select industry type
+              </option>
+              <option>Industry Demo One</option>
+              <option>Industry Demo Two</option>
+              <option>Industry Demo Three</option>
+              <option>Industry Demo Four</option>
             </select>
           </div>
           <div class="col">
@@ -56,11 +58,13 @@ export default function MainCompo() {
               Job Type<span>*</span>
             </label>
             <select class="form-control" id="exampleFormControlSelect11">
-              <option>Select job type</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option selected disabled>
+                Select job type
+              </option>
+              <option>Job Demo One</option>
+              <option>Job Demo Two</option>
+              <option>Job Demo Three</option>
+              <option>Job Demo four</option>
             </select>
           </div>
         </div>
@@ -71,11 +75,13 @@ export default function MainCompo() {
               Work Type<span>*</span>
             </label>
             <select class="form-control" id="exampleFormControlSelect14">
-              <option>Select work type</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option selected disabled>
+                Select work type
+              </option>
+              <option>Work Demo One</option>
+              <option>Work Demo Two</option>
+              <option>Work Demo Three</option>
+              <option>Work Demo Four</option>
             </select>
           </div>
           <div class="col">
@@ -87,14 +93,20 @@ export default function MainCompo() {
                 class="form-control mr-3 "
                 id="exampleFormControlSelect16"
               >
-                <option>Enter min exp</option>
+                <option selected disabled>
+                  Enter min exp
+                </option>
+                <option>1</option>
                 <option>2</option>
                 <option>3</option>
                 <option>4</option>
                 <option>5</option>
               </select>
               <select class="form-control col" id="exampleFormControlSelect17">
-                <option>Enter max exp</option>
+                <option selected disabled>
+                  Enter max exp
+                </option>
+                <option>1</option>
                 <option>2</option>
                 <option>3</option>
                 <option>4</option>
