@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MainCompo() {
   return (
-    <div className="mt-3 border">
+    <div className="mt-3 border col-md-6">
       <div>
         <h6>Post A Job</h6>
         <label>

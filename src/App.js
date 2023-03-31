@@ -1,13 +1,12 @@
 import "./App.css";
 import LeftBar from "./components/LeftBar";
-import MainCompo from "./components/Main/MainCompo";
 
 function App() {
   return (
     <div>
       <div style={{height: 150, backgroundColor: "#dcedf9"}}>
         <nav>
-          <div className="d-flex flex-row-reverse bd-highlight">
+          <div className="d-flex justify-content-end">
             <div className="p-2 bd-highlight">Post A Job</div>
             <div className="p-2 bd-highlight">Inbox</div>
             <div className="p-2 bd-highlight">Jobs</div>

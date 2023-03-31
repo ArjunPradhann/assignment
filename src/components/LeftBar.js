@@ -4,7 +4,7 @@ import MainCompo from "./Main/MainCompo";
 export default function LeftBar() {
   return (
       <div className="row justify-align-content-lg-start">
-        <div className="w-50 d-lg-flex mx-lg-5">
+        <div className="w-50 col-lg-5">
           <div className="w-25 mt-3 mx-5">
             <nav
               id="sidebarMenu"
