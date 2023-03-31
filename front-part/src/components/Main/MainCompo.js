@@ -40,7 +40,7 @@ export default function MainCompo() {
         </div>
         <div class="form-row">
           <div class="col">
-            <label for="exampleFormControlSelect1">
+            <label htmlFor="exampleFormControlSelect1">
               Industry Type<span>*</span>
             </label>
             <select class="form-control" id="exampleFormControlSelect1">
@@ -52,10 +52,10 @@ export default function MainCompo() {
             </select>
           </div>
           <div class="col">
-            <label for="exampleFormControlSelect1">
+            <label htmlFor="exampleFormControlSelect1">
               Job Type<span>*</span>
             </label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <select class="form-control" id="exampleFormControlSelect11">
               <option>Select job type</option>
               <option>2</option>
               <option>3</option>
@@ -67,10 +67,10 @@ export default function MainCompo() {
         <br />
         <div class="form-row">
           <div class="col">
-            <label for="exampleFormControlSelect1">
+            <label htmlFor="exampleFormControlSelect13">
               Work Type<span>*</span>
             </label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <select class="form-control" id="exampleFormControlSelect14">
               <option>Select work type</option>
               <option>2</option>
               <option>3</option>
@@ -79,18 +79,21 @@ export default function MainCompo() {
             </select>
           </div>
           <div class="col">
-            <label for="exampleFormControlSelect1">
+            <label htmlFor="exampleFormControlSelect15">
               Experience<span>*</span>
             </label>
             <div className="form-inline">
-              <select class="form-control mr-3 " id="exampleFormControlSelect1">
+              <select
+                class="form-control mr-3 "
+                id="exampleFormControlSelect16"
+              >
                 <option>Enter min exp</option>
                 <option>2</option>
                 <option>3</option>
                 <option>4</option>
                 <option>5</option>
               </select>
-              <select class="form-control col" id="exampleFormControlSelect1">
+              <select class="form-control col" id="exampleFormControlSelect17">
                 <option>Enter max exp</option>
                 <option>2</option>
                 <option>3</option>
