@@ -8,12 +8,12 @@ function App() {
     <div className="container-fluid m-0 p-0">
       <Navbar />
       <div className="container pt-2">
-        <div className="row">
-          <div className="col-md-4 p-0">
+        <div className="row ">
+          <div className="col-md-4 p-0 ">
             <LeftBar />
           </div>
 
-          <div className="col-md-8" style={styles.main}>
+          <div className="col-md-8 border rounded mt-3">
             <MainCompo />
           </div>
         </div>
@@ -24,10 +24,10 @@ function App() {
 
 export default App;
 
-const styles = {
-  main: {
-    boxShadow: "1px 1px 1px 1px grey",
-    // border: "1solid",
-    borderRadius: "5px",
-  },
-};
+// const styles = {
+//   main: {
+//     boxShadow: "1px 1px 1px 1px grey",
+//     // border: "1solid",
+//     borderRadius: "5px",
+//   },
+// };

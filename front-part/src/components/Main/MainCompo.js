@@ -1,9 +1,13 @@
 import React from "react";
-
+import { FaSuitcase } from "react-icons/fa";
 export default function MainCompo() {
   return (
-    <div className="container-fluid mt-3 ">
-      <h6>Post A Job</h6>
+    <div className="container-fluid mt-3 mb-3">
+      <h6>
+        <FaSuitcase style={{ color: "grey", fontSize: "0.85em" }} />
+        &nbsp;
+        Post A Job
+      </h6>
       <form>
         <div class="form-group">
           <label htmlFor="formGroupExampleInput">
@@ -102,7 +106,7 @@ export default function MainCompo() {
                 <option>4</option>
                 <option>5</option>
               </select>
-              <select class="form-control col" id="exampleFormControlSelect17">
+              <select class="form-control mr-3" id="exampleFormControlSelect17">
                 <option selected disabled>
                   Enter max exp
                 </option>

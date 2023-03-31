@@ -1,9 +1,14 @@
 import React from "react";
+import { IoIosSpeedometer } from "react-icons/io";
+import { FaSuitcase } from "react-icons/fa";
+import { RiMailSettingsFill } from "react-icons/ri";
+import { BsFillInboxFill, BsFillPersonFill } from "react-icons/bs";
+import { TbFileInvoice, TbSettingsFilled } from "react-icons/tb";
 
 export default function LeftBar() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid h-100 d-inline-block">
         <div className="col-md-12">
           <div>
             <div className="mt-3">
@@ -14,43 +19,97 @@ export default function LeftBar() {
                       href="#"
                       className="list-group-item list-group-item-action py-2 "
                     >
-                      <span>Dashboard</span>
+                      <span>
+                        <IoIosSpeedometer
+                          style={{
+                            color: "grey",
+                            fontSize: "0.85em",
+                            align: "center",
+                          }}
+                        />
+                        &nbsp;Dashboard
+                      </span>
                     </a>
                     <a
                       href="#"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
-                      <span>Post A Job</span>
+                      <span>
+                        <FaSuitcase
+                          style={{ color: "grey", fontSize: "0.78em" }}
+                        />
+                        &nbsp;Post A Job
+                      </span>
                     </a>
                     <a
                       href="#"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
-                      <span>Manage Posts</span>
+                      <span>
+                        <RiMailSettingsFill
+                          style={{
+                            color: "grey",
+                            fontSize: "0.85em",
+                          }}
+                        />
+                        &nbsp;Manage Posts
+                      </span>
                     </a>
                     <a
                       href="#"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
-                      <span>Inbox</span>
+                      <span>
+                        <BsFillInboxFill
+                          style={{
+                            color: "grey",
+                            fontSize: "0.85em",
+                          }}
+                        />
+                        &nbsp;Inbox
+                      </span>
                     </a>
                     <a
                       href="#"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
-                      <span>My Profile</span>
+                      <span>
+                        <BsFillPersonFill
+                          style={{
+                            color: "grey",
+                            fontSize: "0.85em",
+                          }}
+                        />
+                        &nbsp;My Profile
+                      </span>
                     </a>
                     <a
                       href="#"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
-                      <span>Invoices</span>
+                      <span>
+                        <TbFileInvoice
+                          style={{
+                            color: "grey",
+                            fontSize: "0.85em",
+                          }}
+                        />
+                        &nbsp;Invoices
+                      </span>
                     </a>
                     <a
                       href="#"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
-                      <span>Settings</span>
+                      <span>
+                        <TbSettingsFilled
+                          style={{
+                            color: "grey",
+                            fontSize: "0.85em",
+                          }}
+                        />
+                        &nbsp;Settings
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -62,3 +121,11 @@ export default function LeftBar() {
     </>
   );
 }
+
+const styles = {
+  main: {
+    boxShadow: "1px 1px 1px 1px grey",
+    // border: "1solid",
+    borderRadius: "5px",
+  },
+};

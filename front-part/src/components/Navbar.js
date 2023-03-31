@@ -1,4 +1,5 @@
 import React from "react";
+import { FaRegBuilding } from "react-icons/fa";
 
 export default function Navbar() {
   return (
@@ -46,7 +47,14 @@ export default function Navbar() {
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Customer
+                  <FaRegBuilding
+                    style={{
+                      color: "grey",
+                      fontSize: "0.85em",
+                      align: "center",
+                    }}
+                  />
+                  &nbsp;Customer
                 </a>
               </li>
             </ul>
