@@ -1,5 +1,6 @@
 import "./App.css";
 import LeftBar from "./components/LeftBar";
+import MainCompo from "./components/Main/MainCompo";
 
 function App() {
   return (
