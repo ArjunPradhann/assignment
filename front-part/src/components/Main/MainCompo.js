@@ -93,7 +93,7 @@ export default function MainCompo() {
               id="industryType"
               defaultValue={defaultValue}
             >
-              <option>Select industry type</option>
+              <option value="">Select industry type</option>
               <option value="Industry 1">Industry Demo One</option>
               <option value="Industry 2">Industry Demo Two</option>
               <option value="Industry 3">Industry Demo Three</option>
@@ -109,7 +109,7 @@ export default function MainCompo() {
               id="jobType"
               defaultValue={defaultValue}
             >
-              <option>Select job type</option>
+              <option value="">Select job type</option>
               <option value="Job 1">Job Demo One</option>
               <option value="Job 2">Job Demo Two</option>
               <option value="Job 3">Job Demo Three</option>
@@ -128,7 +128,7 @@ export default function MainCompo() {
               id="workType"
               defaultValue={defaultValue}
             >
-              <option>Select work type</option>
+              <option value="">Select work type</option>
               <option value="Work 1">Work Demo One</option>
               <option value="Work 2">Work Demo Two</option>
               <option value="Work 3">Work Demo Three</option>
@@ -143,9 +143,9 @@ export default function MainCompo() {
               <select
                 className="form-control mr-3 "
                 id="minExperience"
-                defaultValue={defaultValue}
+                placeholder="heelo"
               >
-                <option>Enter min exp</option>
+                <option value="">Enter min exp</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -157,7 +157,7 @@ export default function MainCompo() {
                 id="maxExperience"
                 defaultValue={defaultValue}
               >
-                <option>Enter max exp</option>
+                <option value="">Enter max exp</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -168,16 +168,6 @@ export default function MainCompo() {
           </div>
         </div>
         <div className="pt-3">
-          {/* <button
-            type="submit"
-            className="btn btn-primary"
-            data-toggle="button"
-            aria-pressed="false"
-            autoComplete="off"
-            onSubmit={submitHandler}
-          >
-            Submit
-          </button> */}
           <input
             type="submit"
             onClick={submitHandler}

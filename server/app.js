@@ -12,4 +12,9 @@ app.post("/form-data", (req, res) => {
   res.json(req.body);
 });
 
+app.get("/", (req, res) => {
+  console.log("Heelo Wolrd");
+  res.send("heelo from the server");
+}); 
+
 app.listen(8000, () => console.log(`App is running`));
