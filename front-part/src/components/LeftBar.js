@@ -14,9 +14,9 @@ export default function LeftBar() {
             <div className="mt-3">
               <nav id="sidebarMenu" className=" d-lg-block sidebar bg-white">
                 <div className="position-sticky">
-                  <div classNameName="list-group list-group-flush mt-4">
+                  <div className="list-group list-group-flush mt-4">
                     <a
-                      href="#"
+                      href="#a"
                       className="list-group-item list-group-item-action py-2 "
                     >
                       <span>
@@ -31,7 +31,7 @@ export default function LeftBar() {
                       </span>
                     </a>
                     <a
-                      href="#"
+                      href="#a"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
                       <span>
@@ -42,7 +42,7 @@ export default function LeftBar() {
                       </span>
                     </a>
                     <a
-                      href="#"
+                      href="#a"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
                       <span>
@@ -56,7 +56,7 @@ export default function LeftBar() {
                       </span>
                     </a>
                     <a
-                      href="#"
+                      href="#a"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
                       <span>
@@ -70,7 +70,7 @@ export default function LeftBar() {
                       </span>
                     </a>
                     <a
-                      href="#"
+                      href="#a"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
                       <span>
@@ -84,7 +84,7 @@ export default function LeftBar() {
                       </span>
                     </a>
                     <a
-                      href="#"
+                      href="#a"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
                       <span>
@@ -98,7 +98,7 @@ export default function LeftBar() {
                       </span>
                     </a>
                     <a
-                      href="#"
+                      href="#a"
                       className="list-group-item list-group-item-action py-2 ripple"
                     >
                       <span>
@@ -122,10 +122,10 @@ export default function LeftBar() {
   );
 }
 
-const styles = {
-  main: {
-    boxShadow: "1px 1px 1px 1px grey",
-    // border: "1solid",
-    borderRadius: "5px",
-  },
-};
+// const styles = {
+//   main: {
+//     boxShadow: "1px 1px 1px 1px grey",
+//     // border: "1solid",
+//     borderRadius: "5px",
+//   },
+// };

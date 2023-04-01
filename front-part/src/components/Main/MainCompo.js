@@ -1,134 +1,174 @@
 import React from "react";
 import { FaSuitcase } from "react-icons/fa";
+import axios from "axios";
 export default function MainCompo() {
+  const submitHandler = (event) => {
+    event.preventDefault();
+    // let formData = new FormData(document.querySelector("form"));
+    // let data = Object.fromEntries(formData);
+    // let jsonData = JSON.stringify(data);
+    // console.log(jsonData);
+
+    const data = {
+      jobTitle: document.querySelector("#jobTitle").value,
+      jobTDesc: document.querySelector("#jobDesc").value,
+      skillsRequired: document.querySelector("#skillsRequired").value,
+      industryType: document.querySelector("#industryType").value,
+      jobType: document.querySelector("#jobType").value,
+      workType: document.querySelector("#workType").value,
+      minExperience: document.querySelector("#minExperience").value,
+      maxExperience: document.querySelector("#maxExperience").value,
+    };
+
+    console.log(data);
+    axios
+      .post("http://localhost:8000/form-data", data)
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
+  };
+
+  const defaultValue = "Deafult Value";
+  
   return (
     <div className="container-fluid mt-3 mb-3">
       <h6>
         <FaSuitcase style={{ color: "grey", fontSize: "0.85em" }} />
-        &nbsp;
-        Post A Job
+        &nbsp; Post A Job
       </h6>
-      <form>
-        <div class="form-group">
-          <label htmlFor="formGroupExampleInput">
+      <form method="POST">
+        <div className="form-group">
+          <label htmlFor="jobTitle">
             Job Title<span>*</span>
           </label>
           <input
             type="text"
-            class="form-control"
-            id="formGroupExampleInput"
+            className="form-control"
+            id="jobTitle"
             placeholder="Enter job title"
           />
         </div>
-        <div class="form-group">
-          <label htmlFor="formGroupExampleInput2">
+        <div className="form-group">
+          <label htmlFor="jobDesc">
             Job Description<span>*</span>
           </label>
           <input
             type="text"
-            class="form-control"
-            id="formGroupExampleInput2"
+            className="form-control"
+            id="jobDesc"
             placeholder="Another input"
           />
         </div>
-        <div class="form-group">
-          <label htmlFor="formGroupExampleInput3">
-            Skiils Required<span>*</span>
+        <div className="form-group">
+          <label htmlFor="skillsRequired">
+            Skills Required<span>*</span>
           </label>
           <input
             type="text"
-            class="form-control"
-            id="formGroupExampleInput3"
+            className="form-control"
+            id="skillsRequired"
             placeholder="Enter skills required"
           />
         </div>
-        <div class="form-row">
-          <div class="col">
-            <label htmlFor="exampleFormControlSelect1">
+        <div className="form-row">
+          <div className="col">
+            <label htmlFor="industryType">
               Industry Type<span>*</span>
             </label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option selected disabled>
-                Select industry type
-              </option>
-              <option>Industry Demo One</option>
-              <option>Industry Demo Two</option>
-              <option>Industry Demo Three</option>
-              <option>Industry Demo Four</option>
+            <select
+              className="form-control"
+              id="industryType"
+              defaultValue={defaultValue}
+            >
+              <option>Select industry type</option>
+              <option value="Industry 1">Industry Demo One</option>
+              <option value="Industry 2">Industry Demo Two</option>
+              <option value="Industry 3">Industry Demo Three</option>
+              <option value="Industry 4">Industry Demo Four</option>
             </select>
           </div>
-          <div class="col">
-            <label htmlFor="exampleFormControlSelect1">
+          <div className="col">
+            <label htmlFor="jobType">
               Job Type<span>*</span>
             </label>
-            <select class="form-control" id="exampleFormControlSelect11">
-              <option selected disabled>
-                Select job type
-              </option>
-              <option>Job Demo One</option>
-              <option>Job Demo Two</option>
-              <option>Job Demo Three</option>
-              <option>Job Demo four</option>
+            <select
+              className="form-control"
+              id="jobType"
+              defaultValue={defaultValue}
+            >
+              <option>Select job type</option>
+              <option value="Job 1">Job Demo One</option>
+              <option value="Job 2">Job Demo Two</option>
+              <option value="Job 3">Job Demo Three</option>
+              <option value="Job 4">Job Demo four</option>
             </select>
           </div>
         </div>
         <br />
-        <div class="form-row">
-          <div class="col">
-            <label htmlFor="exampleFormControlSelect13">
+        <div className="form-row">
+          <div className="col">
+            <label htmlFor="workType">
               Work Type<span>*</span>
             </label>
-            <select class="form-control" id="exampleFormControlSelect14">
-              <option selected disabled>
-                Select work type
-              </option>
-              <option>Work Demo One</option>
-              <option>Work Demo Two</option>
-              <option>Work Demo Three</option>
-              <option>Work Demo Four</option>
+            <select
+              className="form-control"
+              id="workType"
+              defaultValue={defaultValue}
+            >
+              <option>Select work type</option>
+              <option value="Work 1">Work Demo One</option>
+              <option value="Work 2">Work Demo Two</option>
+              <option value="Work 3">Work Demo Three</option>
+              <option value="Work 4">Work Demo Four</option>
             </select>
           </div>
-          <div class="col">
-            <label htmlFor="exampleFormControlSelect15">
+          <div className="col">
+            <label htmlFor="experience">
               Experience<span>*</span>
             </label>
             <div className="form-inline">
               <select
-                class="form-control mr-3 "
-                id="exampleFormControlSelect16"
+                className="form-control mr-3 "
+                id="minExperience"
+                defaultValue={defaultValue}
               >
-                <option selected disabled>
-                  Enter min exp
-                </option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option>Enter min exp</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
-              <select class="form-control mr-3" id="exampleFormControlSelect17">
-                <option selected disabled>
-                  Enter max exp
-                </option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+              <select
+                className="form-control mr-3"
+                id="maxExperience"
+                defaultValue={defaultValue}
+              >
+                <option>Enter max exp</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
             </div>
           </div>
         </div>
         <div className="pt-3">
-          <button
-            type="button"
-            class="btn btn-primary"
+          {/* <button
+            type="submit"
+            className="btn btn-primary"
             data-toggle="button"
             aria-pressed="false"
-            autocomplete="off"
+            autoComplete="off"
+            onSubmit={submitHandler}
           >
             Submit
-          </button>
+          </button> */}
+          <input
+            type="submit"
+            onClick={submitHandler}
+            className="btn btn-primary"
+          />
         </div>
       </form>
     </div>

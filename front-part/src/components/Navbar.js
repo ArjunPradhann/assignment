@@ -6,11 +6,11 @@ export default function Navbar() {
     <>
       <div style={styles.gradient}>
         <nav
-          class="navbar navbar-expand-lg  navbar-light align-top"
+          className="navbar navbar-expand-lg navbar-light align-top"
           style={styles.nav}
         >
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNav"
@@ -18,35 +18,35 @@ export default function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end align-top"
+            className="collapse navbar-collapse justify-content-end align-top"
             id="navbarNav"
           >
-            <ul class="navbar-nav">
-              <li class="nav-item ">
-                <a class="nav-link" href="abcd">
-                  Post A Job <span class="sr-only">(current)</span>
+            <ul className="navbar-nav">
+              <li className="nav-item ">
+                <a className="nav-link" href="abcd">
+                  Post A Job <span className="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="abcd">
+              <li className="nav-item">
+                <a className="nav-link" href="abcd">
                   Inbox
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="abcd">
+              <li className="nav-item">
+                <a className="nav-link" href="abcd">
                   Jobs
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="abcd">
+              <li className="nav-item">
+                <a className="nav-link" href="abcd">
                   Invoice
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="abcd">
+              <li className="nav-item">
+                <a className="nav-link" href="abcd">
                   <FaRegBuilding
                     style={{
                       color: "grey",
@@ -62,7 +62,7 @@ export default function Navbar() {
           <br />
         </nav>
         <div style={styles.div}>
-          <h1 class="text-center">
+          <h1 className="text-center">
             TECHNOLOGY <span style={{ color: "red" }}>&</span> STAFFING
             SOLUTIONS
           </h1>
@@ -74,15 +74,15 @@ export default function Navbar() {
 
 const styles = {
   nav: {
-    "min-height": "80px",
-    "padding-top": "10px !important",
-    "padding-bottom": "0px",
-    "margin-right": "80px",
+    minHeight: "80px",
+    paddingTop: "10px !important",
+    paddingBottom: "0px",
+    marginRight: "80px",
   },
   div: {
-    "padding-bottom": "40px",
+    paddingBotton: "40px",
   },
   gradient: {
-    "background-image": "linear-gradient(#d9dadb, #d1e2ef)",
+    backgroundImage: "linear-gradient(#d9dadb, #d1e2ef)",
   },
 };

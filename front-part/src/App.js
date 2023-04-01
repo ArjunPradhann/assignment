@@ -2,7 +2,6 @@ import "./App.css";
 import LeftBar from "./components/LeftBar";
 import Navbar from "./components/Navbar";
 import MainCompo from "./components/Main/MainCompo";
-
 function App() {
   return (
     <div className="container-fluid m-0 p-0">
