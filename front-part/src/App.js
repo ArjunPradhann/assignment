@@ -8,11 +8,11 @@ function App() {
       <Navbar />
       <div className="container pt-2">
         <div className="row ">
-          <div className="col-md-4 p-0 ">
+          <div className="col-md-3 pt-3">
             <LeftBar />
           </div>
 
-          <div className="col-md-8 border rounded mt-3">
+          <div className="col-md-9 border rounded mt-3">
             <MainCompo />
           </div>
         </div>

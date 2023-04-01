@@ -23,12 +23,24 @@ export default function MainCompo() {
     console.log(data);
     axios
       .post("http://localhost:8000/form-data", data)
-      .then((response) => console.log(response))
+      .then((response) => {
+        console.log(response);
+        event.target.reset();
+      })
       .catch((error) => console.log(error));
+
+    document.querySelector("#jobTitle").value = "";
+    document.querySelector("#jobDesc").value = "";
+    document.querySelector("#skillsRequired").value = "";
+    document.querySelector("#industryType").value = defaultValue;
+    document.querySelector("#jobType").value = defaultValue;
+    document.querySelector("#workType").value = defaultValue;
+    document.querySelector("#minExperience").value = defaultValue;
+    document.querySelector("#maxExperience").value = defaultValue;
   };
 
   const defaultValue = "Deafult Value";
-  
+
   return (
     <div className="container-fluid mt-3 mb-3">
       <h6>
@@ -45,6 +57,8 @@ export default function MainCompo() {
             className="form-control"
             id="jobTitle"
             placeholder="Enter job title"
+            name="jobTitle"
+            required={true} //Doubts
           />
         </div>
         <div className="form-group">

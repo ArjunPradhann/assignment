@@ -26,27 +26,27 @@ export default function Navbar() {
           >
             <ul className="navbar-nav">
               <li className="nav-item ">
-                <a className="nav-link" href="abcd">
-                  Post A Job <span className="sr-only">(current)</span>
+                <a className="nav-link text-dark" href="abcd">
+                  Post A Job
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="abcd">
+                <a className="nav-link text-dark" href="abcd">
                   Inbox
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="abcd">
+                <a className="nav-link text-dark" href="abcd">
                   Jobs
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="abcd">
+                <a className="nav-link text-dark" href="abcd">
                   Invoice
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="abcd">
+                <a className="nav-link text-dark" href="abcd">
                   <FaRegBuilding
                     style={{
                       color: "grey",
@@ -62,7 +62,7 @@ export default function Navbar() {
           <br />
         </nav>
         <div style={styles.div}>
-          <h1 className="text-center">
+          <h1 className="text-center font-weight-light">
             TECHNOLOGY <span style={{ color: "red" }}>&</span> STAFFING
             SOLUTIONS
           </h1>
@@ -74,13 +74,13 @@ export default function Navbar() {
 
 const styles = {
   nav: {
-    minHeight: "80px",
+    minHeight: "90px",
     paddingTop: "10px !important",
-    paddingBottom: "0px",
+    paddingBottom: "20px",
     marginRight: "80px",
   },
   div: {
-    paddingBotton: "40px",
+    minHeight: "90px",
   },
   gradient: {
     backgroundImage: "linear-gradient(#d9dadb, #d1e2ef)",
