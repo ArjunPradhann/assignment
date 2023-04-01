@@ -23,16 +23,13 @@ export default function MainCompo() {
     console.log(data);
     axios
       .post("http://localhost:8000/form-data", data)
-      .then((response) => {
-        console.log(response);
-        event.target.reset();
-      })
+      .then((response) => console.log(response))
       .catch((error) => console.log(error));
 
     document.querySelector("#jobTitle").value = "";
     document.querySelector("#jobDesc").value = "";
     document.querySelector("#skillsRequired").value = "";
-    document.querySelector("#industryType").value = defaultValue;
+    document.querySelector("#industryType").value = defaultValue; //Doubts
     document.querySelector("#jobType").value = defaultValue;
     document.querySelector("#workType").value = defaultValue;
     document.querySelector("#minExperience").value = defaultValue;

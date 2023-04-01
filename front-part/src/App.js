@@ -1,4 +1,3 @@
-import "./App.css";
 import LeftBar from "./components/LeftBar";
 import Navbar from "./components/Navbar";
 import MainCompo from "./components/Main/MainCompo";
