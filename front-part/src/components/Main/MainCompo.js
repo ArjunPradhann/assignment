@@ -29,7 +29,7 @@ export default function MainCompo() {
     document.querySelector("#jobTitle").value = "";
     document.querySelector("#jobDesc").value = "";
     document.querySelector("#skillsRequired").value = "";
-    document.querySelector("#industryType").value = defaultValue; //Doubts
+    document.querySelector("#industryType").value = defaultValue;
     document.querySelector("#jobType").value = defaultValue;
     document.querySelector("#workType").value = defaultValue;
     document.querySelector("#minExperience").value = defaultValue;
