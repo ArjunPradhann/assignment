@@ -10,7 +10,6 @@ app.use(cors());
 app.post("/form-data", (req, res) => {
 
   console.log(req.body);
-  res.json(req.body);
 });
 
 // app.get("/", (req, res) => {
