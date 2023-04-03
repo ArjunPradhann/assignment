@@ -12,6 +12,7 @@ export default function MainCompo() {
     const data = {
       jobTitle: document.querySelector("#jobTitle").value,
       jobTDesc: document.querySelector("#jobDesc").value,
+      radioButton: document.querySelector("#radioButton").value,
       skillsRequired: document.querySelector("#skillsRequired").value,
       industryType: document.querySelector("#industryType").value,
       jobType: document.querySelector("#jobType").value,
@@ -21,12 +22,17 @@ export default function MainCompo() {
     };
 
     console.log(data);
+    if (data.minExperience === "2") {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
     axios
       .post("http://localhost:8000/form-data", data)
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
 
-    document.querySelector("#jobTitle").value = "";
+    document.querySelector("#jobTitle").value = " ";
     document.querySelector("#jobDesc").value = "";
     document.querySelector("#skillsRequired").value = "";
     document.querySelector("#industryType").value = defaultValue;
@@ -55,9 +61,17 @@ export default function MainCompo() {
             id="jobTitle"
             placeholder="Enter job title"
             name="jobTitle"
-            required={true} //Doubts
+            required ={true}
           />
         </div>
+
+
+        <input type="radio" id="radioButton" name="fav_language" value="CSS" /> {" "}
+        <label htmlFor="css">CSS</label>
+        <input type="radio" id="radioButton" name="fav_language" value="JavaScript"/>
+        <label htmlFor="javascript">JavaScript</label>
+
+
         <div className="form-group">
           <label htmlFor="jobDesc">
             Job Description<span>*</span>
@@ -69,7 +83,7 @@ export default function MainCompo() {
             placeholder="Another input"
           />
         </div>
-        <div className="form-group">
+       <div className="form-group">
           <label htmlFor="skillsRequired">
             Skills Required<span>*</span>
           </label>
